@@ -1,1 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff4f7;
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ff8fa3, #ffd6dc);
+  color: white;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 1.2em;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.carta {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.galeria-titulo {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  color: #d1526f;
+}
+
+.galeria {
+  max-width: 900px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeri img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: trasform .3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: #8b3a4b;
+}
 
