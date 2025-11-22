@@ -55,10 +55,10 @@ h1 {
 
 .coracao {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   background: red;
-  transform: rotate(45deg);
+  transform: rotate(65deg);
   cursor: pointer;
 }
 
@@ -75,7 +75,7 @@ h1 {
 
 .coracao: :before {
   top: -20px;
-  left: 0;
+  left: 15;
 }
 
 .coracao: :after {
