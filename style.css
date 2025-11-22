@@ -63,9 +63,11 @@ h1 {
   cursor: pointer;
   transition: transform .3s;
 }
+
 .coracao:hover {
   transform: rotate(-45deg) scale(1.1);
 }
+
 .coracao: :before,
 .coracao: :after {
   content: "";
@@ -75,10 +77,12 @@ h1 {
   border-radius: 50%;
   position: absolute;
 }
+
 .coracao: :before {
   top: -40px;
   left: 0;
 }
+
 .coracao: :after {
   left: 40px;
   top: 0;
