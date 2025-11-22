@@ -8,6 +8,15 @@ body {
   color: #444;
 }
 
+/* Fade-in suave */
+.fade-in {
+  animation: fade 1.5s ease forwards;
+  opacity: 0;
+}
+@keyframes fade {
+  to { opacity: 1; }
+}
+
 header {
   text-align: center;
   padding: 50px 20px;
@@ -38,14 +47,55 @@ h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.galeria-titulo {
+/* Coração 8/
+.coracao-container {
   text-align: center;
   margin-top: 40px;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2em;
-  color: #d1526f;
 }
 
+.coracao {
+  width: 80px;
+  height: 80px;
+  background-color: #ff4d6d;
+  position: relative;
+  display: incline-block;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: transform .3s;
+}
+.coracao:hover {
+  transform: rotate(-45deg) scale(1.1);
+}
+.coracao: :before,
+.coracao: :after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #ff4d6d;
+  border-radius: 50%;
+  position: absolute;
+}
+.coracao: :before {
+  top: -40px;
+  left: 0;
+}
+.coracao: :after {
+  left: 40px;
+  top: 0;
+}
+
+/* Mensagem secreta */
+.mensagem-secreta {
+  opacity: 0;
+  margin-top: 20px;
+  font-size: 1.3em;
+  transition: opacity .6s;
+}
+.mostrar {
+  opacity: 1 !important;
+}
+
+/* Galeria */
 .galeria {
   max-width: 120px;
   margin: 30px auto;
@@ -66,6 +116,36 @@ h1 {
 
 .galeria img:hover {
   transform: scale(1.05);
+}
+
+/* Botão secreto */
+.segredo-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.botao-secreto {
+  background: #ff4d6d;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: tranform .3s;
+}
+
+.botao-secreto:hover {
+  transform: scale(1.1);
+}
+
+.segredo-texto {
+  opacity: 0;
+  transition: opacity .6s;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #d1526f;
 }
 
 footer {
