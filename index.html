@@ -8,12 +8,15 @@
   </head>
   <body>
 
-    <header>
+    <!-- Música de fundo -->
+    <audio id="musica" src="img/musica.mp3" autoplay loop></audio>
+
+    <header class="fade-in">
       <h1>Para o Amor da Minha Vida<3</h1>
       <p class="subtitulo">Uma carta feita com todo meu coração</p>
     </header>
 
-    <section class="carta">
+    <section class="carta fade-in">
       <p>
         Meu amor,<br><br>
         Hoje eu quis fazer algo diferente... então criei este cantinho só nosso.
@@ -22,22 +25,43 @@
       </p>
 
       <p>
-        Cada momento com você é uma lembrança que eu guardo com carinho.
-        E este site... é só mais uma delas. <3
+        Eu te admiro, te respeito e te amo com um carinho tão grande que às vezes até
+        parece maior do que consigo explicar<3
       </p>
     </section>
 
-    <h2 class="galeria-titulo">Nossas fotos</h2>
+    <!-- Coração surpresa -->
+    <div class="coração-container fade-in">
+      <div class="coracao" onclick="mostrarMensagem()"></div>
+      <p id="mensagem-secreta" class="mensagem-secreta">Você é o melhor presente que Deus já me deu. <3</p>
+    </div>
+    
+    <h2 class="galeria-titulo fade-in">Nossas fotos</h2>
 
-    <section class="galeria">
-      <img src="img/IMG_0083.jpg" alt="Foto 1">
-      <img src="img/IMG_9227.jpg" alt="Foto 2">
-      <img src="img/IMG_9503.jpg" alt="Foto 3">
+    <section class="galeria fade-in">
+      <img src="img/IMG_0083.jpg">
+      <img src="img/IMG_9227.jpg">
+      <img src="img/IMG_9503.jpg">
     </section>
 
-    <footer>
+    <!-- Botão escondido -->
+    <div class="segredo-container fade-in">
+      <button class="botao-secreto" onclick="mostrarSegredo()">?</button>
+      <p id="segredo" class="segredo-texto">Sempre que você duvidar do meu amor, Volte aqui. Eu te amo infinitamente. <3</p>
+    </div>
+    
+    <footer class="fade-in">
       <p>Feito com amor, só pra você<3</p>
     </footer>
+
+    <script>
+      function mostrarMensagem() {
+        document.getElementById("mensagem-secret").classList.toggle("mostrar");
+      }
+      function mostrarSegredo() {
+        document.getElementById("segredo").classList.toggle("mostrar");
+      }
+    </script>
     
   </body>
 </html>
